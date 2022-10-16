@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dołącz do nas</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Dołącz do nas!</h1>
+        <p id="description">Wypełnij formularz zgłoszeniowy</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Imię </label>
+          <input
+            id="name"
+            name="name"
+            class="form-control"
+            type="text"
+            placeholder="Twoje imię"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email </label>
+          <input
+            id="email"
+            name="email"
+            class="form-control"
+            type="email"
+            placeholder="Twój emial"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Numer telefonu </label>
+          <input
+            id="number"
+            name="number"
+            class="form-control"
+            type="tel"
+            min="9"
+            max="11"
+            placeholder="Numer telefonu"
+          />
+        </div>
+        <div class="form-group">
+          <p>Skąd o nas wiesz?</p>
+          <select id="dropdown" class="form-control">
+            <option>Wybierz z listy</option>
+            <option value="facebook">Facebook</option>
+            <option value="Znajomi">Znajomi</option>
+            <option value="Akcje">Akcje</option>
+            <option value="inne">inne</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Czy jesteś pełnoletni/a?</p>
+          <label for="input-yes">Tak</label>
+          <input type="radio" value="tak" id="input-yes" name="yes-no" />
+          <label for="input-no">Nie</label>
+          <input type="radio" value="nie" id="input-no" name="yes-no" />
+        </div>
+        <div class="form-group">
+          <p>Dlaczego chcesz zostać strażakiem?</p>
+          <label>
+            <input
+              name="choice"
+              value="lubie-pomagac-innym"
+              type="checkbox"
+              class="input-checkbox"
+            />Lubię pomagać innym
+          </label>
+          <label>
+            <input
+              name="choice"
+              value="lubie-wyzwania"
+              type="checkbox"
+              class="input-checkbox"
+            />Lubię wyzwania
+          </label>
+          <label>
+            <input
+              name="choice"
+              value="lubie-adrenaline"
+              type="checkbox"
+              class="input-checkbox"
+            />Lubię adrenalinę
+          </label>
+          <label>
+            <input
+              name="choice"
+              value="chce-zaimponowac-innym"
+              type="checkbox"
+              class="input-checkbox"
+            />Chcę zaimponować innym
+          </label>
+          <label>
+            <input
+              name="choice"
+              value="nie-umiem-wisiedziec-w-miejscu"
+              type="checkbox"
+              class="input-checkbox"
+            />Nie umiem wysiedzieć w miejscu
+          </label>
+        </div>
+        <div>
+          <p>Napisz coś o sobie:</p>
+          <textarea
+            id="bio"
+            class="input-textarea"
+            name="bio"
+            placeholder="Jestem szalony i lubię sport..."
+            rows="3"
+            cols="30"
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
