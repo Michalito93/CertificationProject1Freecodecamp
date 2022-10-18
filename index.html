@@ -60,10 +60,24 @@
         </div>
         <div class="form-group">
           <p>Czy jesteś pełnoletni/a?</p>
-          <label for="input-yes">Tak</label>
-          <input type="radio" value="tak" id="input-yes" name="yes-no" />
-          <label for="input-no">Nie</label>
-          <input type="radio" value="nie" id="input-no" name="yes-no" />
+          <label for="input-yes">
+            <input
+              class="input-radio"
+              type="radio"
+              value="tak"
+              id="input-yes"
+              name="yes-no"
+            />_Tak
+          </label>
+          <label for="input-no">
+            <input
+              class="input-radio"
+              type="radio"
+              value="nie"
+              id="input-no"
+              name="yes-no"
+            />_Nie
+          </label>
         </div>
         <div class="form-group">
           <p>Dlaczego chcesz zostać strażakiem?</p>
@@ -120,8 +134,6 @@
             class="input-textarea"
             name="bio"
             placeholder="Jestem szalony i lubię sport..."
-            rows="3"
-            cols="30"
           ></textarea>
         </div>
         <div>
